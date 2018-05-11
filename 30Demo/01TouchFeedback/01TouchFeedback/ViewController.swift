@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    @IBAction func changeShowTouchDurationAction(_ sender: UIButton) {
+        Visualizer.sharedInstance.config.showsTimer = !Visualizer.sharedInstance.config.showsTimer
+    }
+    
+    @IBAction func changeShowsTouchRadiusAction(_ sender: UIButton) {
+        Visualizer.sharedInstance.config.showsTouchRadius = !Visualizer.sharedInstance.config.showsTouchRadius
+    }
+    
 }
 

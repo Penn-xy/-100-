@@ -12,6 +12,10 @@
 		1857B3CA20A5391A00226D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857B3C820A5391A00226D1B /* Main.storyboard */; };
 		1857B3CC20A5391A00226D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1857B3CB20A5391A00226D1B /* Assets.xcassets */; };
 		1857B3CF20A5391A00226D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857B3CD20A5391A00226D1B /* LaunchScreen.storyboard */; };
+		1857B3D820A543B100226D1B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857B3D720A543B100226D1B /* Configuration.swift */; };
+		1857B3DA20A545FC00226D1B /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857B3D920A545FC00226D1B /* TouchView.swift */; };
+		1857B3DC20A5469400226D1B /* UIWindow+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857B3DB20A5469400226D1B /* UIWindow+Swizzle.swift */; };
+		1857B3E320A5477F00226D1B /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857B3E220A5477F00226D1B /* Visualizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		1857B3CB20A5391A00226D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1857B3CE20A5391A00226D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1857B3D020A5391A00226D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1857B3D720A543B100226D1B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1857B3D920A545FC00226D1B /* TouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
+		1857B3DB20A5469400226D1B /* UIWindow+Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Swizzle.swift"; sourceTree = "<group>"; };
+		1857B3E220A5477F00226D1B /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,20 @@
 				1857B3CB20A5391A00226D1B /* Assets.xcassets */,
 				1857B3CD20A5391A00226D1B /* LaunchScreen.storyboard */,
 				1857B3D020A5391A00226D1B /* Info.plist */,
+				1857B3D620A5426500226D1B /* Visualizer */,
 			);
 			path = 01TouchFeedback;
+			sourceTree = "<group>";
+		};
+		1857B3D620A5426500226D1B /* Visualizer */ = {
+			isa = PBXGroup;
+			children = (
+				1857B3D720A543B100226D1B /* Configuration.swift */,
+				1857B3D920A545FC00226D1B /* TouchView.swift */,
+				1857B3DB20A5469400226D1B /* UIWindow+Swizzle.swift */,
+				1857B3E220A5477F00226D1B /* Visualizer.swift */,
+			);
+			path = Visualizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +116,7 @@
 				TargetAttributes = {
 					1857B3C020A5391A00226D1B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1857B3DA20A545FC00226D1B /* TouchView.swift in Sources */,
+				1857B3D820A543B100226D1B /* Configuration.swift in Sources */,
 				1857B3C720A5391A00226D1B /* ViewController.swift in Sources */,
 				1857B3C520A5391A00226D1B /* AppDelegate.swift in Sources */,
+				1857B3DC20A5469400226D1B /* UIWindow+Swizzle.swift in Sources */,
+				1857B3E320A5477F00226D1B /* Visualizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +299,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C7UL4AYA3;
 				INFOPLIST_FILE = 01TouchFeedback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "penn.-1TouchFeedback";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,14 +318,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7C7UL4AYA3;
 				INFOPLIST_FILE = 01TouchFeedback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "penn.-1TouchFeedback";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
