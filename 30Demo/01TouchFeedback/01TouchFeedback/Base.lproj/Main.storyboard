@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQX-SO-pVh">
-                                <rect key="frame" x="171" y="350.5" width="32" height="30"/>
+                                <rect key="frame" x="171" y="197" width="32" height="30"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.098039215690000001" green="0.4431372549" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -44,14 +44,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-Hm-v6m">
-                                <rect key="frame" x="16" y="499" width="343" height="30"/>
+                                <rect key="frame" x="16" y="360" width="343" height="30"/>
                                 <state key="normal" title="Change shows touch duration status"/>
                                 <connections>
                                     <action selector="changeShowTouchDurationAction:" destination="pFR-VY-w6k" eventType="touchUpInside" id="wNs-oO-BC2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLl-iD-5x8">
-                                <rect key="frame" x="16" y="537" width="343" height="30"/>
+                                <rect key="frame" x="16" y="398" width="343" height="30"/>
                                 <state key="normal" title="Change shows Touch Radius(only device)"/>
                                 <connections>
                                     <action selector="changeShowsTouchRadiusAction:" destination="pFR-VY-w6k" eventType="touchUpInside" id="5Pq-3i-kh1"/>
@@ -62,12 +62,12 @@
                         <constraints>
                             <constraint firstItem="fts-77-Sor" firstAttribute="trailing" secondItem="oLl-iD-5x8" secondAttribute="trailing" constant="16" id="2tJ-3N-wlR"/>
                             <constraint firstItem="fts-77-Sor" firstAttribute="trailing" secondItem="PTE-Hm-v6m" secondAttribute="trailing" constant="16" id="31h-Ri-8HJ"/>
+                            <constraint firstItem="nQX-SO-pVh" firstAttribute="top" secondItem="fts-77-Sor" secondAttribute="top" constant="133" id="88v-zs-fTb"/>
                             <constraint firstItem="oLl-iD-5x8" firstAttribute="leading" secondItem="fts-77-Sor" secondAttribute="leading" constant="16" id="Fop-Kg-w65"/>
-                            <constraint firstItem="nQX-SO-pVh" firstAttribute="centerX" secondItem="fts-77-Sor" secondAttribute="centerX" id="JAr-2R-xDr"/>
+                            <constraint firstItem="nQX-SO-pVh" firstAttribute="centerX" secondItem="fts-77-Sor" secondAttribute="centerX" id="N7d-2h-W6Q"/>
                             <constraint firstItem="PTE-Hm-v6m" firstAttribute="leading" secondItem="fts-77-Sor" secondAttribute="leading" constant="16" id="NhT-M3-cW7"/>
                             <constraint firstItem="oLl-iD-5x8" firstAttribute="top" secondItem="PTE-Hm-v6m" secondAttribute="bottom" constant="8" id="Nyy-Zw-Ygm"/>
-                            <constraint firstItem="fts-77-Sor" firstAttribute="bottom" secondItem="PTE-Hm-v6m" secondAttribute="bottom" constant="138" id="bLY-wz-Wvl"/>
-                            <constraint firstItem="nQX-SO-pVh" firstAttribute="centerY" secondItem="fts-77-Sor" secondAttribute="centerY" id="ft0-bw-8YP"/>
+                            <constraint firstItem="PTE-Hm-v6m" firstAttribute="top" secondItem="nQX-SO-pVh" secondAttribute="bottom" constant="133" id="x89-YK-pTj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fts-77-Sor"/>
                     </view>
