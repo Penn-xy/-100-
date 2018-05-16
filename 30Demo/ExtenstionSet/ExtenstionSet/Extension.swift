@@ -32,3 +32,11 @@ extension UIPasteboard {
 extension UIViewController {
     
 }
+
+extension Array {
+    typealias T = Element
+    func getRandomElement() -> T {
+        let index = Int(arc4random_uniform(UInt32(self.count)))
+        return self[index]
+    }
+}
