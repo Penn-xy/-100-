@@ -14,6 +14,9 @@
 		18151A9020AA8D2F00A1171A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18151A8E20AA8D2F00A1171A /* LaunchScreen.storyboard */; };
 		18151A9820AA8D3B00A1171A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151A9720AA8D3B00A1171A /* Extension.swift */; };
 		18151ABA20AACBAD00A1171A /* CopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151AB920AACBAD00A1171A /* CopyViewController.swift */; };
+		18151B0520AEAF4A00A1171A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151B0420AEAF4A00A1171A /* GradientView.swift */; };
+		18151B0F20B2A0C200A1171A /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151B0E20B2A0C200A1171A /* StopWatchViewController.swift */; };
+		18151B1120B2AE5600A1171A /* SnapBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151B1020B2AE5600A1171A /* SnapBehaviorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		18151A9120AA8D2F00A1171A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18151A9720AA8D3B00A1171A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		18151AB920AACBAD00A1171A /* CopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyViewController.swift; sourceTree = "<group>"; };
+		18151B0420AEAF4A00A1171A /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		18151B0E20B2A0C200A1171A /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
+		18151B1020B2AE5600A1171A /* SnapBehaviorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapBehaviorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +67,14 @@
 				18151A8520AA8D2F00A1171A /* AppDelegate.swift */,
 				18151A8720AA8D2F00A1171A /* ViewController.swift */,
 				18151AB920AACBAD00A1171A /* CopyViewController.swift */,
+				18151B0420AEAF4A00A1171A /* GradientView.swift */,
 				18151A8920AA8D2F00A1171A /* Main.storyboard */,
 				18151A8C20AA8D2F00A1171A /* Assets.xcassets */,
 				18151A8E20AA8D2F00A1171A /* LaunchScreen.storyboard */,
 				18151A9120AA8D2F00A1171A /* Info.plist */,
 				18151A9720AA8D3B00A1171A /* Extension.swift */,
+				18151B0E20B2A0C200A1171A /* StopWatchViewController.swift */,
+				18151B1020B2AE5600A1171A /* SnapBehaviorViewController.swift */,
 			);
 			path = ExtenstionSet;
 			sourceTree = "<group>";
@@ -144,7 +153,10 @@
 			files = (
 				18151A8820AA8D2F00A1171A /* ViewController.swift in Sources */,
 				18151ABA20AACBAD00A1171A /* CopyViewController.swift in Sources */,
+				18151B0520AEAF4A00A1171A /* GradientView.swift in Sources */,
 				18151A9820AA8D3B00A1171A /* Extension.swift in Sources */,
+				18151B1120B2AE5600A1171A /* SnapBehaviorViewController.swift in Sources */,
+				18151B0F20B2A0C200A1171A /* StopWatchViewController.swift in Sources */,
 				18151A8620AA8D2F00A1171A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
