@@ -17,6 +17,8 @@
 		18151B0520AEAF4A00A1171A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151B0420AEAF4A00A1171A /* GradientView.swift */; };
 		18151B0F20B2A0C200A1171A /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151B0E20B2A0C200A1171A /* StopWatchViewController.swift */; };
 		18151B1120B2AE5600A1171A /* SnapBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151B1020B2AE5600A1171A /* SnapBehaviorViewController.swift */; };
+		18151B3120B3C59100A1171A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18151B3020B3C59100A1171A /* AuthViewController.swift */; };
+		183582C120B55539001AF66A /* SpringAnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183582C020B55539001AF66A /* SpringAnimateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		18151B0420AEAF4A00A1171A /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		18151B0E20B2A0C200A1171A /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		18151B1020B2AE5600A1171A /* SnapBehaviorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapBehaviorViewController.swift; sourceTree = "<group>"; };
+		18151B3020B3C59100A1171A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		183582C020B55539001AF66A /* SpringAnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				18151A9720AA8D3B00A1171A /* Extension.swift */,
 				18151B0E20B2A0C200A1171A /* StopWatchViewController.swift */,
 				18151B1020B2AE5600A1171A /* SnapBehaviorViewController.swift */,
+				18151B3020B3C59100A1171A /* AuthViewController.swift */,
+				183582C020B55539001AF66A /* SpringAnimateViewController.swift */,
 			);
 			path = ExtenstionSet;
 			sourceTree = "<group>";
@@ -155,7 +161,9 @@
 				18151ABA20AACBAD00A1171A /* CopyViewController.swift in Sources */,
 				18151B0520AEAF4A00A1171A /* GradientView.swift in Sources */,
 				18151A9820AA8D3B00A1171A /* Extension.swift in Sources */,
+				18151B3120B3C59100A1171A /* AuthViewController.swift in Sources */,
 				18151B1120B2AE5600A1171A /* SnapBehaviorViewController.swift in Sources */,
+				183582C120B55539001AF66A /* SpringAnimateViewController.swift in Sources */,
 				18151B0F20B2A0C200A1171A /* StopWatchViewController.swift in Sources */,
 				18151A8620AA8D2F00A1171A /* AppDelegate.swift in Sources */,
 			);
